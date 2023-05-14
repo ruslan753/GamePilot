@@ -128,15 +128,15 @@ public class GameView extends SurfaceView implements Runnable {
 
                 }
                 break;
-            case MotionEvent.ACTION_MOVE: // движение по экрану
+            case MotionEvent.ACTION_MOVE: 
 
                 break;
-            case MotionEvent.ACTION_UP: // отпускание
-                // при отпускании экрана самолёт начнёт снижаться
+            case MotionEvent.ACTION_UP: 
+              
                 flight.setGoingUp(false);
                 break;
         }
 
-        return true; // активация обработки касания экрана
+        return false; 
     }
 }
